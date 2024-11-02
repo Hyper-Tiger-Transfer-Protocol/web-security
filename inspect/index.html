@@ -1,0 +1,25 @@
+<script>
+  function submit() {
+	  var user = document.getElementById("user").value;
+	  var pass = document.getElementById("pass").value;
+
+	  console.log(user, pass);
+	  
+	  if(user == "admin" && pass == "god") {
+		  alert("You're not supposed to be here");
+	  } else if (user == "Cam" && pass == "secret") {
+		  alert("Dr. Pepper man has appeared");
+	  } else if (user == "Ronald" && pass == "sex") {
+		  alert("Baddie Alert");
+	  } else {
+		  alert("FAILURE");
+	  }
+
+  }
+</script>
+
+<h1>Login</h1>
+<label>Username</label><input id="user"></input><br>
+<label>Password</label><input id="pass"></input><br>
+
+<button onclick="submit();">Submit</button>
